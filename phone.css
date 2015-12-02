@@ -110,13 +110,13 @@ input, select{
 }
 
 select {
-    -moz-appearance: none;
+    /*-moz-appearance: none;
     text-indent: 0.01px;
     text-overflow: '';
     background-image: url("icons/arrow_page_down.svg");
 	background-repeat: no-repeat;
 	background-size: 27px;
-	background-position: 256px 6px;
+	background-position: 256px 6px;*/
 	/*background-color: red;*/
 }
 
@@ -324,9 +324,9 @@ select {
 
 select, input, .button {
 	border: 1px solid rgba(156, 156, 156, 0.41);
-}*/
+}
 
-
+*/
 
 
 
