@@ -9,10 +9,12 @@
 	}
 
 	#welcome {
-	    padding-top: 38px;
-		padding-bottom: 21px;
+		text-align: center;
+	    /*padding-top: 38px;*/
+		/*padding-bottom: 21px;*/
 		font-size: 17px;
 	}
+
 </style>
 
 </head>
@@ -24,33 +26,44 @@
 	<div id="content">
 		<div id="topbar" class="whitebox">
 			
-			<center>Home</center>
+			Home
 			<img id="hamburger" src="icons/menu_bars.svg"/>
 		</div>
 
 		<hr>
 		<div id="welcome" class="whitebox">
-			<center>Welcome Back!</center>
+			<hr>
+			<hr>
+			Welcome Back
+			<hr>
+			<hr>
 		</div>
 
 		<hr>
 		<a href="checking.html"><div class="whitebox account right_arrow_div">
+			<hr>
+			<hr>
 			<h1>CHECKING</h1>
 			Balance<div>$1,000.32</div>
+			<hr>
+			<hr>
 		</div></a>
 
 		<hr>
 		<div class="whitebox account right_arrow_div">
+			<hr>
+			<hr>
 			<h1>BROKERAGE</h1>
 			Balance<div>$1,000.32</div>
+			<hr>
+			<hr>
 		</div>
 
 
 		<div id="bottom_bar">
-			<a href="home.html"><div id="home">Home</div></a>
 			<a href="transfer.html"><div id="transfer">Transfer</div></a>
 			<a href="sendMoney.html"><div id="send">Send Money</div></a>
-			<div id="deposit">Deposit</div>
+			<a href="deposit.html"><div id="deposit">Deposit</div></a>
 		</div>
 	</div>
 	
@@ -77,16 +90,12 @@
 		    	// document.getElementById("content").style.top = "-10px" ;
 		    	document.getElementById("content").style.position = "relative" ;
 		    	document.getElementById("sidebar").style.display = "inherit" ;
-		    	document.getElementById("hamburger").style.top = "-12px";
-		    	document.getElementById("bottom_bar").style.top = "468px";
 		    }
 		    else {
 		    	document.getElementById("content").style.left = "" ;
 		    	document.getElementById("content").style.top = "" ;
 		    	document.getElementById("content").style.position = "" ;
 		    	document.getElementById("sidebar").style.display = "none" ;
-		    	document.getElementById("hamburger").style.top = "";
-		    	document.getElementById("bottom_bar").style.top = "486px";
 		    }
 	    }
 	  

@@ -55,19 +55,21 @@ body {
 	height: 42px;
 	line-height: 42px;
 	font-size: 17px;
+	position: relative;
+	text-align: center;
 }
 
 #hamburger {
 	width: 64px;
 	position: absolute;
-	top: 7px;
+	top: -12px;
 	left: -6px;
 }
 
 #back_page {
 	width: 26px;
 	position: absolute;
-	top: 25px;
+	top: 8px;
 	left: 6px;
 }
 
@@ -128,8 +130,8 @@ select {
 .account {
 	/*font-weight: bold;*/
 	padding: 10px;
-	padding-top: 33px;
-	padding-bottom: 18px;
+	/*padding-top: 33px;*/
+	/*padding-bottom: 18px;*/
 	font-size: 18px;
 }
 
@@ -214,18 +216,18 @@ select {
 
 #bottom_bar div {
 	/*height: 50px;*/
-	width: 77px;
+	width: 103px;
 	display: inline-block;
 	background-repeat: no-repeat;
 	height: 20px;
 	padding-top: 55px;
 }
 
-#bottom_bar #home {
+/*#bottom_bar #home {
 	background-position: center 11px;
 	background-size: 48px auto;
 	background-image: url("icons/home_dark_icon.svg");
-}
+}*/
 
 #bottom_bar #transfer {
 	background-position: center 11px;
