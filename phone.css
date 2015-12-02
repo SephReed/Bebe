@@ -168,7 +168,7 @@ select {
 #sidebar {
 	display: none;
 	position: fixed;
-	top: 18px;
+	top: 0px;
 	background-color: #bfbfbf;
 	width:210px;
 	height: 430px;
@@ -198,7 +198,13 @@ select {
 }
 
 #charles {
-	height: 412px !important;
+	height: 430px !important;
+	background-image: url("icons/charles_shwab.jpeg");
+	background-size: 188px auto;
+	background-position: center 10px;
+	background-repeat: no-repeat;
+	filter: grayscale(1); /* Firefox 35+ */
+  	-webkit-filter: grayscale(1);
 }
 
 
