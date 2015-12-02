@@ -113,6 +113,11 @@ select {
     -moz-appearance: none;
     text-indent: 0.01px;
     text-overflow: '';
+    background-image: url("icons/arrow_page_down.svg");
+	background-repeat: no-repeat;
+	background-size: 27px;
+	background-position: 256px 6px;
+	/*background-color: red;*/
 }
 
 
@@ -251,6 +256,28 @@ select {
 	background-position: center 11px;
 	background-size: 48px auto;
 	background-image: url("icons/Deposit_Check_icon2.svg");
+}
+
+#swipebutton {
+    display: none;
+}
+
+#swipebutton + label { 
+	display: block;
+	float: right;
+	height: 29px;
+	width: 66px;
+    background-image: url("icons/disable.png");
+    background-size: 55px auto;
+	background-position: 4px -9px;
+	background-repeat: no-repeat;
+
+}
+
+#swipebutton:checked + label {
+    background-image: url("icons/enable.png");
+   	background-size: 63px auto;
+	background-position: -2px -8px;
 }
 
 
