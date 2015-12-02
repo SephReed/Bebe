@@ -1,0 +1,248 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	background-color: black;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+	padding: 4px;
+	padding-right: 10px;
+	height: 38px;
+	line-height: 36px;
+	display: inline-block;
+	background-color: #E5E5E5;
+	border-radius: 6px;
+	text-align: center;
+}
+
+.button_right {
+	position: relative;
+	left: 161px;
+}
+
+#content .button {
+	width: 124px;
+}
+
+#test {
+	width: 320px;
+	height: 568px;
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+	opacity: 0.5;
+	display: none;
+	pointer-events: none;
+}
+
+#phone {
+	background-color: #F8F8F8;
+	width: 320px;
+	height: 568px;
+	overflow: hidden;
+}
+
+#topbar {
+	height: 42px;
+	line-height: 42px;
+	font-size: 17px;
+}
+
+#hamburger {
+	width: 64px;
+	position: absolute;
+	top: 7px;
+	left: -6px;
+}
+
+#back_page {
+	width: 26px;
+	position: absolute;
+	top: 25px;
+	left: 6px;
+}
+
+
+.padleft div {
+	padding-left: 11px;
+}
+
+
+.spacer {
+	height: 12px;
+}
+
+hr {
+	height: 12px;
+	/*height: 20px;*/
+	display: block;
+	border: none;
+}
+
+.small_title {
+	font-size: 13px;
+	/*padding-top: 15px;*/
+	/*padding-bottom: 10px;*/
+}
+
+
+input, select{
+	line-height: 36px;
+	font-size: 20px;
+	padding: 4px;
+	background-color: #F2F2F2;
+	margin-left: 11px;
+	border: 1px solid #F0F0F0;
+	border-radius: 6px;
+	height: 38px;
+	width: 296px;
+}
+
+select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+}
+
+
+.text_entry_header {
+	font-size: 19px;
+}
+
+.right_arrow_div {
+	background-image: url("icons/arrow_next_page.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 32px auto;
+}
+
+.account {
+	/*font-weight: bold;*/
+	padding: 10px;
+	padding-top: 33px;
+	padding-bottom: 18px;
+	font-size: 18px;
+}
+
+.account h1 {
+	font-size: 20px;
+}
+
+.account div {
+	text-align: right;
+	display: inline-block;
+	float: right;
+	margin-right: 23px;
+	/*right: 0px;*/
+}
+
+
+
+.whitebox {
+	background-color: white;
+}
+
+
+#phone_top {
+	top: 0px;
+	width: 320px;
+	/*position: fixed;*/
+	z-index: 50;
+	display: none;
+}
+
+
+/** SIDE BAR **/
+
+#sidebar {
+	display: none;
+	position: fixed;
+	top: 18px;
+	background-color: #bfbfbf;
+	width:210px;
+	height: 430px;
+	/*box-shadow: 1px 1px 5px #222;*/
+}
+
+#sidebar li {
+	background-color: #d9d9d9;
+	height: 45px;
+	line-height: 45px;
+	font-size: 16px;
+	border-bottom: solid 1px #595959;
+}
+
+#sidebar li img {
+	float: left;
+	opacity: 0.7;
+	height: 45px;
+	width: 45px;
+}
+
+#sidebar li div {
+	float: left;
+	line-height: 45px;
+	/*display: inline-block;*/
+	margin-left: 15px;
+}
+
+#charles {
+	height: 412px !important;
+}
+
+
+
+/** Bottom BAR **/
+#bottom_bar {
+	position: absolute;
+	top: 486px;
+	width: 320px;
+	background-color: #BFBFBF;
+	font-size: 11px;
+	text-align: center;
+	height: 82px;
+}
+
+#bottom_bar div {
+	/*height: 50px;*/
+	width: 77px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	height: 20px;
+	padding-top: 55px;
+}
+
+#bottom_bar #home {
+	background-position: center 11px;
+	background-size: 48px auto;
+	background-image: url("icons/home_dark_icon.svg");
+}
+
+#bottom_bar #transfer {
+	background-position: center 11px;
+	background-size: 48px auto;
+	background-image: url("icons/transfer_money.svg");
+}
+
+#bottom_bar #send {
+	background-position: center 11px;
+	background-size: 48px auto;
+	background-image: url("icons/Send_Money_icon.svg");
+}
+
+#bottom_bar #deposit {
+	background-position: center 11px;
+	background-size: 48px auto;
+	background-image: url("icons/Deposit_Check_icon2.svg");
+}
+
+

@@ -1,0 +1,136 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="phone.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<style>
+	
+
+	#message .button {
+		width: 105px;
+		font-size: 12px;
+	}
+
+	#overlay {
+		position: fixed;
+		top: 60px;
+		height: 508px;
+		width: 320px;
+		background-color: rgba(95, 95, 95, 0.75);
+		display: none;
+	}
+
+	#message {
+		margin: 20px;
+		background-color: white;
+		height: 470px;
+		border-radius: 6px;
+	}
+</style>
+
+</head>
+
+
+
+<div id="phone">
+	<img src="iPhone_top_info.jpg" id="phone_top"/>
+
+	<div id="content">
+		<div id="topbar" class="whitebox">
+			<center>Send Money</center>
+			<a href="sendMoney.html"><img id="back_page" src="icons/arrow_prev_page.svg"/></a>
+		</div>
+
+		<hr>
+		<div class="whitebox padleft">
+			<hr>
+			<div class="small_title">TO</div>
+			
+			<div class="text_entry_header">Ur Mom</div>
+			<hr>
+		</div>
+
+		<hr>
+		<div class="whitebox padleft">
+			<hr>
+			<div class="small_title">FROM:</div>
+			<select>
+				<option value="text">Checking</option>
+				<option value="email">Brokerage</option>
+				<option value="both">Saving</option>
+			</select>
+			<hr>
+			<hr>
+			<div class="small_title">Amount:</div>
+			<input type="text"></input>
+			<hr>
+			<hr>
+			<div class="small_title">Date:</div>
+			<input type="text"></input>
+			<hr>
+			<hr>
+			<div class="small_title">Memo:</div>
+			<input type="text"></input>
+			<hr>
+			<hr>
+			<div>
+				<a href="home.html"><div class="button">Cancel</div></a>
+				<div id="continue" class="button">Continue</div>
+			</div>
+			<hr>
+		</div>
+	</div>
+</div>
+
+<div id="overlay">
+	<div id="message" class="padleft">
+		<hr>
+		<div class="small_title">PAYMENT SUMMARY</div>
+		<hr>
+		<hr>
+		<div class="small_title">TO PAYEE:</div>
+		<div class="text_entry_header">Ur Mom</div>
+		<hr>
+		<div class="small_title">FROM:</div>
+		<div class="text_entry_header">Checking</div>
+		<hr>
+		<div class="small_title">AMOUNT:</div>
+		<div class="text_entry_header">$100.00</div>
+		<hr>
+		<div class="small_title">DATE:</div>
+		<div class="text_entry_header">1/2/3</div>
+		<hr>
+		<div class="small_title">MEMO:</div>
+		<div class="text_entry_header">Lawl</div>
+		<hr>
+		<hr>
+		<div>
+			<div id="cancel_overlay" class="button">Cancel</div>
+			<a href="sendMoneyTo.html"><div class="button">Send Payment</div></a>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	window.onload = function() {
+	 	
+
+	    var cntn = document.getElementById('continue');
+	    cntn.onclick = function() {
+		    document.getElementById("overlay").style.display = "inherit";
+	    }
+
+	   	var close = document.getElementById('cancel_overlay');
+	    close.onclick = function() {
+		    document.getElementById("overlay").style.display = "none";
+	    }
+	    
+	  
+	}
+</script>
+
+
+
+</html>

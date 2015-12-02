@@ -1,0 +1,99 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="phone.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<style>
+	#test {
+		/*display: inherit;*/
+	}
+
+	#welcome {
+	    padding-top: 38px;
+		padding-bottom: 21px;
+		font-size: 17px;
+	}
+</style>
+
+</head>
+
+<img id="test" src="test/home_test.png"/>
+
+<div id="phone">
+	<img src="iPhone_top_info.jpg" id="phone_top"/>
+	<div id="content">
+		<div id="topbar" class="whitebox">
+			
+			<center>Home</center>
+			<img id="hamburger" src="icons/menu_bars.svg"/>
+		</div>
+
+		<hr>
+		<div id="welcome" class="whitebox">
+			<center>Welcome Back</center>
+		</div>
+
+		<hr>
+		<a href="checking.html"><div class="whitebox account right_arrow_div">
+			<h1>CHECKING</h1>
+			Balance<div>$1,000.32</div>
+		</div></a>
+
+		<hr>
+		<div class="whitebox account right_arrow_div">
+			<h1>BROKERAGE</h1>
+			Balance<div>$1,000.32</div>
+		</div>
+
+
+		<div id="bottom_bar">
+			<a href="home.html"><div id="home">Home</div></a>
+			<a href="transfer.html"><div id="transfer">Transfer</div></a>
+			<a href="sendMoney.html"><div id="send">Send Money</div></a>
+			<div id="deposit">Deposit</div>
+		</div>
+	</div>
+	
+
+	<ul id="sidebar">
+		<li id="charles"></li>
+		<!-- <a href="home.html"><li><img src="icons/home_dark_icon.svg"/><div>Home</div></li></a> -->
+		<li><a href="home.html"><img src="icons/Contact_icon.svg"/><div>Contact</div></a></li>
+		<li><a href="settings.html"><img src="icons/settings_icon.svg"/><div>Settings and Alerts</div></a></li>
+		<li><a href="home.html"><img src="icons/log_off_icon.svg"/><div>Log Off</div></a></li>
+	</ul>
+
+</div>
+
+
+<script type="text/javascript">
+	window.onload = function() {
+	 	
+
+	    var brgr = document.getElementById('hamburger');
+	    brgr.onclick = function() {
+	    	if(document.getElementById("content").style.position != "relative") {
+		    	document.getElementById("content").style.left = "210px" ;
+		    	// document.getElementById("content").style.top = "-10px" ;
+		    	document.getElementById("content").style.position = "relative" ;
+		    	document.getElementById("sidebar").style.display = "inherit" ;
+		    	document.getElementById("hamburger").style.top = "-12px";
+		    	document.getElementById("bottom_bar").style.top = "468px";
+		    }
+		    else {
+		    	document.getElementById("content").style.left = "" ;
+		    	document.getElementById("content").style.top = "" ;
+		    	document.getElementById("content").style.position = "" ;
+		    	document.getElementById("sidebar").style.display = "none" ;
+		    	document.getElementById("hamburger").style.top = "";
+		    	document.getElementById("bottom_bar").style.top = "486px";
+		    }
+	    }
+	  
+	}
+</script>
+
+
+
+
+</html>

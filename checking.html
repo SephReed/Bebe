@@ -1,0 +1,89 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="phone.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<style>
+#test {
+	/*display: inherit;*/
+}
+
+#accountPin {
+	padding-top: 23px;
+	padding-bottom: 10px;
+	padding-left: 32px;
+	padding-right: 26px;
+	font-size: 22px;
+}
+
+#accountPin span {
+	font-size: 13px;
+}
+
+#accountPin div {
+	display: inline-block;
+	float:right;
+}
+
+#transactions .date {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#transactions .entry {
+	font-size: 19px;
+	border-bottom: solid 1px #222;
+}
+
+#transactions .entry span {
+	display: inline-block;
+	float: right;
+	margin-right: 11px;
+	/*font-size: 20px;*/
+}
+
+
+</style>
+
+</head>
+
+<img id="test" src="test/checking_test.png"/>
+
+<div id="phone">
+	<img src="iPhone_top_info.jpg" id="phone_top"/>
+	<div id="content">
+		<div id="topbar" class="whitebox">
+			<center>Checking Account</center>
+			<a href="home.html"><img id="back_page" src="icons/arrow_prev_page.svg"/></a>
+		</div>
+
+		<div class="spacer"></div>
+		<div id="accountPin" class="whitebox">
+			Balance<div>$1000.00</div><br>
+			<span>Account 1234567</span>
+		</div>
+
+		<hr>
+		<div id="transactions" class="whitebox padleft">
+			<hr>
+			<div class="small_title">TRANSACTIONS</div>
+			<hr>
+			<div class="date">1/2/3</div>
+			<div class="entry">Place<span>100.00</span></div>
+			<div class="entry">Place<span>100.00</span></div>
+			<div class="entry">Place<span>100.00</span></div>
+			<div class="entry">Place<span>100.00</span></div>
+			<div class="date">1/2/3</div>
+			<div class="entry">Place<span>100.00</span></div>
+			<div class="date">1/2/3</div>
+			<div class="entry">Place<span>100.00</span></div>
+			<div class="entry">Place<span>100.00</span></div>
+			<div class="entry">Place<span>100.00</span></div>
+			<div class="entry">Place<span>100.00</span></div>
+			<div class="entry">Place<span>100.00</span></div>
+		</div>
+	</div>
+</div>
+
+</html>
