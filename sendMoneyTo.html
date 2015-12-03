@@ -12,7 +12,7 @@
 		font-size: 12px;
 	}
 
-	#overlay {
+	#overlay, #calendar_overlay {
 		position: fixed;
 		top: 42px;
 		height: 526px;
@@ -20,6 +20,7 @@
 		background-color: rgba(95, 95, 95, 0.75);
 		display: none;
 	}
+
 
 	#message {
 		margin: 20px;
@@ -75,7 +76,7 @@
 			<hr>
 			<hr>
 			<div class="small_title">DATE</div>
-			<input class="date" type="text"></input>
+			<input id="date_input" class="date" type="text"></input>
 			<hr>
 			<hr>
 			<div class="small_title">MEMO</div>
@@ -121,6 +122,43 @@
 </div>
 
 
+
+<style>
+
+#calendar_overlay {
+	/*display: inherit;*/
+	background-image: url("pic_page/calander.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+#calendar_cancel, #calendar_choose_date {
+	position: fixed;
+	background-color: red;
+}
+
+#calendar_choose_date {
+	top: 418px;
+	height: 50px;
+	width: 47px;
+	left: 43px;
+}
+
+#calendar_cancel {
+	top: 193px;
+	height: 50px;
+	width: 47px;
+	left: 264px;
+}
+
+
+</style>
+
+<div id="calendar_overlay">
+	<div id="calendar_cancel"></div>
+	<div id="calendar_choose_date"></div>
+</div>
+
 <script type="text/javascript">
 	window.onload = function() {
 	 	
@@ -133,6 +171,25 @@
 	   	var close = document.getElementById('cancel_overlay');
 	    close.onclick = function() {
 		    document.getElementById("overlay").style.display = "none";
+	    }
+
+
+	    //Calander Stuff
+
+	    var cal_open = document.getElementById('date_input');
+	    cal_open.onclick = function() {
+		    document.getElementById("calendar_overlay").style.display = "inherit";
+	    }
+
+	    var cal_cncl = document.getElementById('calendar_cancel');
+	    cal_cncl.onclick = function() {
+		    document.getElementById("calendar_overlay").style.display = "none";
+	    }
+
+	    var cal_date = document.getElementById('calendar_choose_date');
+	    cal_date.onclick = function() {
+		    document.getElementById("calendar_overlay").style.display = "none";
+		    document.getElementById("date_input").value = "1/2/3";
 	    }
 	    
 	  
