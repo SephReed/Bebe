@@ -136,25 +136,6 @@ select {
 	background-size: 32px auto;
 }
 
-.account {
-	/*font-weight: bold;*/
-	padding: 10px;
-	/*padding-top: 33px;*/
-	/*padding-bottom: 18px;*/
-	/*font-size: 18px;*/
-}
-
-.account h1 {
-	font-size: 20px;
-}
-
-.account div {
-	text-align: right;
-	display: inline-block;
-	float: right;
-	margin-right: 23px;
-	/*right: 0px;*/
-}
 
 
 
@@ -163,7 +144,7 @@ select {
 }
 
 .border_underline {
-	border-bottom: 1px solid rgba(140, 140, 140, 0.54);	
+	border-bottom: 1px solid rgba(150, 150, 150, 0.09);
 }
 
 
@@ -241,6 +222,11 @@ select {
 	padding-top: 55px;
 }
 
+#bottom_bar.budget div {
+	/*height: 50px;*/
+	width: 77px;
+}
+
 /*#bottom_bar #home {
 	background-position: center 11px;
 	background-size: 48px auto;
@@ -264,6 +250,32 @@ select {
 	background-size: 48px auto;
 	background-image: url("icons/Deposit_Check_icon2.svg");
 }
+
+
+#bottom_bar #budgeting {
+	background-position: center 5px;
+	background-size: 68px auto;
+	background-image: url("icons/Budgeting_icon.png");
+}
+
+#bottom_bar #transactions {
+	background-position: center 11px;
+	background-size: 39px auto;
+	background-image: url("icons/Transactions_clipboard.svg");
+}
+
+#bottom_bar #trends {
+	background-position: center 10px;
+	background-size: 56px auto;
+	background-image: url("icons/Trends_icon.png");
+}
+
+#bottom_bar #what_if {
+	background-position: center 10px;
+	background-size: 42px auto;
+	background-image: url("icons/Whatif_icon.png");
+}
+
 
 #swipebutton {
     display: none;
