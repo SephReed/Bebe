@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<link rel="stylesheet" type="text/css" href="phone.css">
+<link rel="stylesheet" type="text/css" href="../phone.css">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <script type="text/JavaScript" src="js/csi.js"></script> 
 
@@ -20,7 +20,7 @@
 
 .camera {
 	height: 66px;
-	background-image: url("icons/camera.png");
+	background-image: url("../icons/camera.png");
 	background-size: 54px auto;
 	background-repeat: no-repeat;
 	background-position: center 6px;
@@ -47,19 +47,19 @@
 }
 
 #check_front {
-	background-image: url("pic_page/front_of_check.png");
+	background-image: url("../pic_page/front_of_check.png");
 }
 
 #confirm_front {
-	background-image: url("pic_page/front_of_check_confirm.png");
+	background-image: url("../pic_page/front_of_check_confirm.png");
 }
 
 #check_back {
-	background-image: url("pic_page/back_of_check.png");
+	background-image: url("../pic_page/back_of_check.png");
 }
 
 #confirm_back {
-	background-image: url("pic_page/back_of_check_confirm.png");
+	background-image: url("../pic_page/back_of_check_confirm.png");
 }
 
 
@@ -108,7 +108,7 @@
 	<div id="content">
 		<div id="topbar" class="whitebox">
 			Deposit Check
-			<a href="home.html"><img id="back_page" src="icons/arrow_prev_page.svg"/></a>
+			<a href="../home.html"><div id="back_page"></div></a>
 		</div>
 
 		<hr>
@@ -209,7 +209,7 @@ window.addEventListener('load', function() {
     var cnfrm_frnt_use = document.getElementById('front_conf_use');
     cnfrm_frnt_use.onclick = function() {
     	document.getElementById("confirm_front").style.display = "none" ;
-    	document.getElementById("front_btn").style.backgroundImage = "url(\"icons/check_back.png\")" ;
+    	document.getElementById("front_btn").style.backgroundImage = "url(\"../icons/check_back.png\")" ;
 
     	frontFilled = true;
     	if(backFilled == true) {
@@ -254,7 +254,7 @@ window.addEventListener('load', function() {
     var cnfrm_back_use = document.getElementById('back_conf_use');
     cnfrm_back_use.onclick = function() {
     	document.getElementById("confirm_back").style.display = "none" ;
-    	document.getElementById("back_btn").style.backgroundImage = "url(\"icons/check_front.png\")" ;
+    	document.getElementById("back_btn").style.backgroundImage = "url(\"../icons/check_front.png\")" ;
 
     	backFilled = true;
 

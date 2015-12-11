@@ -71,10 +71,13 @@ select, input, .button {
 }
 
 #back_page {
-	width: 26px;
 	position: absolute;
 	top: 8px;
 	left: 6px;
+	height: 34px;
+    width: 34px;
+    background-image: url("icons/arrow_prev_page.svg");
+    background-repeat: no-repeat;
 }
 
 

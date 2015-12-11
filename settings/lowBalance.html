@@ -1,11 +1,13 @@
 <html>
 
 <head>
-<link rel="stylesheet" type="text/css" href="phone.css">
+<link rel="stylesheet" type="text/css" href="../phone.css">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 <style>
-
+select {
+	
+}
 </style>
 
 </head>
@@ -15,13 +17,13 @@
 	<div id="content">
 		<div id="topbar" class="whitebox">
 			<center>Settings and Alerts</center>
-			<a href="settings.html"><img id="back_page" src="icons/arrow_prev_page.svg"/></a>
+			<a href="settings.html"><div id="back_page"></div></a>
 		</div>
 
 		<hr>
 		<div class="whitebox padleft">
 			<hr>
-			<div class="small_title">TRANSACTIONS</div>
+			<div class="small_title">LOW BALANCE NOTIFICATION</div>
 			<hr>
 			<div class="text_entry_header">From:</div>
 			<select>
@@ -31,7 +33,7 @@
 				<option value="both">Both</option>
 			</select>
 			<hr>
-			<div class="text_entry_header">Amount More Than:</div>
+			<div class="text_entry_header">Amount Less Than:</div>
 			<input type="text"></input>
 			<hr>
 			<div class="text_entry_header">Notify Via:</div>
