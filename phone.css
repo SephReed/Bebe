@@ -194,9 +194,9 @@ select {
 	height: 430px !important;
 	background-image: url("icons/charles_shwab.jpeg");
 	background-size: 188px auto;
-	background-position: center 10px;
+	background-position: center 233px;
 	background-repeat: no-repeat;
-	filter: grayscale(1); /* Firefox 35+ */
+	filter: grayscale(1); 
   	-webkit-filter: grayscale(1);
 }
 
@@ -342,7 +342,12 @@ select {
 */
 
 
-
+.whitebox {
+	background-color: #FFF;
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.1);
+	border-top: solid 1px rgba(125, 125, 125, 0.24);
+	border-bottom: solid 1px rgba(125, 125, 125, 0.24);
+}
 
 
 
