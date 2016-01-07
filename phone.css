@@ -56,6 +56,11 @@ select, input, .button {
 	overflow: hidden;
 }
 
+#phone:hover {
+    overflow-y: auto;
+    padding-right: 1px;
+}
+
 #topbar {
 	height: 42px;
 	line-height: 42px;
